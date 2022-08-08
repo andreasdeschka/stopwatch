@@ -59,6 +59,7 @@ function displayTimer() {
   time += miliseconds;
 
   T.timerDiv.innerHTML = time;
+  document.getElementById('extra').innerHTML = "Hours: " + Math.round(10*(hours + minutes/60 + seconds/3600))/10;
 }
 
 function startTimer() {
